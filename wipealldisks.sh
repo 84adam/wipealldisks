@@ -11,7 +11,7 @@ fi
 
 DISK=$(lsblk | awk '/^sd.*/ {print $1}')
 
-echo "WARNING: This will permantently erase or render inaccessible all data on all disks! This includes: `for i in DISK ; do echo "/dev/$DISK" ; done`."
+echo "WARNING: This will permanently erase or render inaccessible all data on all disks! This includes: `for i in DISK ; do echo "/dev/$DISK" ; done`."
 echo "Are you sure you wish to continue? Yes/No "
 
 read input
